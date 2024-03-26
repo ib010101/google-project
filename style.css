@@ -1,0 +1,194 @@
+body{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+}
+section header{
+    position: absolute;
+    top: 0;
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: center;
+}
+section header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 30px;
+}
+section header ul li{
+    list-style: none;
+    display: flex;
+    margin-left: 25px;
+}
+section header ul li a{
+    text-decoration: none;
+    color: rgb(29, 27, 27);
+}
+section header ul li a:hover{
+    text-decoration: underline;
+}
+section header ul li button{
+    border: none;
+    outline: none;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    padding: 10px 20px;
+    background-color: rgb(40, 40, 255);
+    cursor: pointer;
+}
+section header ul li button:hover{
+    border: none;
+    outline: none;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    padding: 10px 20px;
+    background-color: rgb(0, 0, 231);
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+}
+section .main{
+    width: 680px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+section .main .searchbox{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+}
+section .main .searchbox .search{
+    width: 98%;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 2px;
+    padding-left: 60px;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    border: 1px solid rgb(221, 221, 221);
+    font-size: 16px;
+}
+section .main .searchbox .icons{
+    position: absolute;
+    top: 0;
+    display: flex;
+    width: 100%;
+    justify-content:space-between ;
+    align-items:center ;
+    padding: 10px 20px;
+    pointer-events: none;
+}
+section .main .buttons{
+    margin-top: 20px;
+}
+section .main .buttons button{
+    margin: 0 10px;
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+    color: rgb(29, 27, 27);
+    cursor: pointer;
+}
+section .main .buttons button:hover{
+    margin: 0 10px;
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+    color: rgb(29, 27, 27);
+    border: 1px solid rgb(209, 209, 209);
+}
+section .main .lang a{
+    text-decoration: none;
+}
+section .main .lang a:hover{
+    text-decoration: underline;
+}
+section .footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(248, 248, 248);
+    width: 100%;
+}
+section .footer .row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+section .footer .row ul{
+    display: flex;
+}
+section .footer .row ul li{
+    list-style-type: none;
+    margin-left: 25px;
+}
+section .footer .row ul li a{
+    text-decoration: none;
+    color: rgb(29,27,27);
+}
+section .footer .row ul li a:hover{
+    text-decoration:underline;
+    color: rgb(29,27,27);
+}
+/*Mobile View*/
+@media (max-width:769px){
+section .main .searchbox .search{
+    width: 82%;
+}
+section .main .searchbox .icons{
+    width:86%;
+}
+section header ul li button{
+    padding: 10px 10px;
+}
+section header ul li button:hover{
+    padding: 10px 10px;
+}
+section .main{
+    margin-bottom: 120px;
+}
+section .country{
+    bottom: 184px;
+    width: 101%;
+}
+section .footer{
+    margin-bottom: 80px;
+    width: 101%;
+    margin-bottom: -8px;
+}
+section .footer .row ul{
+    display: block;
+}
+section header ul li button{
+    background-color: blue;
+}
+}
+/*End Mobile View*/
+/*Desktop View*/
+@media (min-width:1024px){
+
+}
+/*End Desktop View*/
+/*Tablet View*/
+@media (min-width:769px) and (max-width:1024px){
+    section header ul li button{
+        background-color: tomato;
+    }
+}
+/*End Tablet View*/
